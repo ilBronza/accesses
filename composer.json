@@ -1,0 +1,38 @@
+{
+    "name": "ilbronza/accesses",
+    "description": ":badges and physical accesses manager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Davide Bronzini",
+            "email": "davide@sistema.srl",
+            "homepage": "https://www.sistema.srl"
+        }
+    ],
+    "homepage": "https://github.com/ilbronza/accesses",
+    "keywords": ["Laravel", "Accesses"],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "IlBronza\\Accesses\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IlBronza\\Accesses\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IlBronza\\Accesses\\AccessesServiceProvider"
+            ],
+            "aliases": {
+                "Accesses": "IlBronza\\Accesses\\Facades\\Accesses"
+            }
+        }
+    }
+}
